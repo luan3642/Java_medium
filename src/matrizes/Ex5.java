@@ -17,7 +17,7 @@ public class Ex5 {
         };
 
         int somaLinha = 0;
-        int somaColuna = 0;
+
 
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
@@ -27,12 +27,20 @@ public class Ex5 {
             System.out.println("a somaLinha é: " + somaLinha);
             somaLinha = 0;
         }
+        int armazena = 0;
 
-        for(int i = 0; i<matriz.length; i++){
-            for(int j  = 0; j<matriz.length; j++){
-                System.out.println(matriz[i][j]);
-                break;
+        /*
+        1 2 3
+        4 5 6
+        7 8 9
+         */
+        for (int j = 0; j < matriz[0].length; j++) {
+            int somaColuna = 0;
+            for (int i = 0; i < matriz.length; i++) {
+                somaColuna += matriz[i][j];
             }
+            System.out.println("a soma coluna é: "+somaColuna);
         }
     }
 }
+
