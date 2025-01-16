@@ -25,5 +25,11 @@ public class Ex7 {
                 }
             }
         }
+
+        for(int i = matriz.length; i>0; i--){
+            for(int j = matriz[matriz.length - 1]; j>0; j--){
+
+            }
+        }
     }
 }
