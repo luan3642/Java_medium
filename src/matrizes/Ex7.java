@@ -18,6 +18,7 @@ public class Ex7 {
 
         };
         int sumDiagonalFirst = 0;
+        int sumDiagonalSecond = 0;
         for(int i = 0; i<matriz.length; i++){
             for(int j = 0; j<matriz[0].length; j++){
                 if(i == j){
@@ -26,10 +27,15 @@ public class Ex7 {
             }
         }
 
-        for(int i = matriz.length; i>0; i--){
-            for(int j = matriz[matriz.length - 1]; j>0; j--){
-
+        for(int i = matriz.length - 1; i>=0; i--){
+            for(int j = matriz[i].length - 1; j>=0; j--){
+                if(i == j){
+                    sumDiagonalSecond += matriz[i][j];
+                }
             }
         }
+
+        System.out.println("a sum of first diagonal: "+sumDiagonalFirst);
+        System.out.println("a sum of second diagonal: "+sumDiagonalSecond);
     }
 }
